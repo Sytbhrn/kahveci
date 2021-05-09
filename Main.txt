@@ -1,0 +1,12 @@
+package kahveci;
+
+public class Main {
+
+	public static void main(String[] args) {
+		BaseCustomerManager customerManager = new StarbucksCustomerManager(new CustomerCheckManager());
+		Customer customer = new Customer(10,"seyit","sarı","4524");
+		
+		customerManager.Save(customer);
+	}
+
+}

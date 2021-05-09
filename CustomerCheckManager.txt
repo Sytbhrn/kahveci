@@ -1,0 +1,15 @@
+package kahveci;
+
+public class CustomerCheckManager implements CustomerCheckService{
+
+	@Override
+	public boolean CheckIfRealPerson(Customer customer) {
+		if(customer.getFirstName() == "seyit") {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}
